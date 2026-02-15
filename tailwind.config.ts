@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        display: ['"Space Grotesk"', 'sans-serif'],
+        body: ['"Plus Jakarta Sans"', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -27,6 +31,10 @@ export default {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
         },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
@@ -34,10 +42,6 @@ export default {
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
@@ -65,25 +69,40 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+        "float": {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-20px)" },
+        },
+        "float-slow": {
+          "0%, 100%": { transform: "translateY(0px) rotate(0deg)" },
+          "50%": { transform: "translateY(-30px) rotate(5deg)" },
+        },
+        "blob": {
+          "0%": { borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70%" },
+          "25%": { borderRadius: "58% 42% 75% 25% / 76% 46% 54% 24%" },
+          "50%": { borderRadius: "50% 50% 33% 67% / 55% 27% 73% 45%" },
+          "75%": { borderRadius: "33% 67% 58% 42% / 63% 68% 32% 37%" },
+          "100%": { borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70%" },
+        },
+        "pulse-soft": {
+          "0%, 100%": { opacity: "0.3" },
+          "50%": { opacity: "0.5" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "float": "float 6s ease-in-out infinite",
+        "float-slow": "float-slow 8s ease-in-out infinite",
+        "blob": "blob 10s ease-in-out infinite",
+        "pulse-soft": "pulse-soft 4s ease-in-out infinite",
       },
     },
   },
