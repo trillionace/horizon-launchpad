@@ -60,7 +60,7 @@ const Footer = () => {
             <div className="flex flex-col gap-3 text-sm opacity-70">
               <div className="flex items-center gap-2">
                 <Mail size={16} />
-                <span>team@horizonhoppers.com</span>
+                <span>team@horrizonhoppers.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone size={16} />

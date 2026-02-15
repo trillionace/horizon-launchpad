@@ -12,7 +12,7 @@ import Layout from "@/components/Layout";
 import teamImage from "@/assets/image1 (1).png";
 import scholarImage from "@/assets/image2.png";
 import mentoringImage from "@/assets/image3.png";
-import testifyImage from "@/assets/image4.JPG";
+import testifyImage from "@/assets/image4.jpg";
 
 const About = () => {
   const fadeInUp = {

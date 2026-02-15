@@ -51,10 +51,11 @@ const Index = () => {
                 variants={fadeUp}
                 initial="hidden"
                 animate="visible"
-                className="inline-flex items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 text-sm font-medium mb-6"
+                className="inline-flex flex-col items-center gap-2 bg-primary/10 text-primary rounded-full px-4 py-2 text-sm font-medium mb-6"
               >
                 <Plane size={16} />
-                Your Journey to World-Class Education Starts Here
+                <span className="font-bold">Horrizon</span>
+                <span className="font-bold">Hoppers</span>
               </motion.div>
 
               <motion.h1
@@ -394,8 +395,10 @@ const Index = () => {
           >
             <div className="bg-card border border-border rounded-3xl p-10 md:p-14 shadow-lg">
               <p className="text-lg leading-relaxed text-muted-foreground mb-6">
-                <span className="font-semibold text-foreground">
-                  Horizon Hoppers
+                <span className="font-semibold text-foreground block">
+                  Horrizon
+                  <br />
+                  Hoppers
                 </span>{" "}
                 is an education initiative founded by a group of high school
                 classmates who refused to let the walls of their birth country

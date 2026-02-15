@@ -19,7 +19,7 @@ const Contact = () => {
 
     // Create mailto link with pre-filled content
     const emailBody = `Name: ${fullName}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`;
-    const mailtoLink = `mailto:team@horizonhoppers.com?subject=Study Abroad Inquiry from ${fullName}&body=${encodeURIComponent(emailBody)}`;
+    const mailtoLink = `mailto:team@horrizonhoppers.com?subject=Study Abroad Inquiry from ${fullName}&body=${encodeURIComponent(emailBody)}`;
 
     // Open Gmail/default email client
     window.location.href = mailtoLink;
@@ -72,7 +72,7 @@ const Contact = () => {
                 {
                   icon: Mail,
                   title: "Email Us",
-                  detail: "team@horizonhoppers.com",
+                  detail: "team@horrizonhoppers.com",
                 },
                 {
                   icon: Phone,

@@ -20,10 +20,13 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         <Link to="/" className="flex items-center gap-2">
           <div className="w-10 h-10 rounded-lg gradient-bg flex items-center justify-center">
-            <span className="text-primary-foreground font-display font-bold text-lg">H</span>
+            <span className="text-primary-foreground font-display font-bold text-lg">
+              H
+            </span>
           </div>
-          <span className="font-display font-bold text-xl text-foreground">
-            Horizon <span className="gradient-text">Hoppers</span>
+          <span className="font-display font-bold text-lg text-foreground flex flex-col leading-tight">
+            <span>Horrizon</span>
+            <span className="gradient-text">Hoppers</span>
           </span>
         </Link>
 
