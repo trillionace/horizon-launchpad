@@ -76,7 +76,7 @@ const Contact = () => {
                 },
                 {
                   icon: Phone,
-                  title: "Call Us",
+                  title: "Chat directly with me ",
                   detail: "+237676632898",
                   isPhone: true,
                 },
